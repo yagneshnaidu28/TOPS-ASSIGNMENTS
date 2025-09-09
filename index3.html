@@ -1,0 +1,62 @@
+<!-- Lab Assignment 
+Task: Create a product catalog table that includes the following columns: 
+o Product Name 
+o Product Image (use placeholder image URLs) 
+o Price 
+o Description 
+o Availability (in stock, out of stock) 
+ 
+Additional Requirements: 
+o Use thead for the table header. 
+o Add a border and some basic styling using inline CSS. 
+o Use colspan or rowspan to merge cells where applicable. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+</head>
+<body>
+
+    <table style="border: 1px solid black; border-collapse: collapse;">
+        <thead style="background-color: lightgray;">
+            <tr>
+                <th style="border: 1px solid black; padding: 8px;">Product Name</th>
+                <th style="border: 1px solid black; padding: 8px;">Product Image</th>
+                <th style="border: 1px solid black; padding: 8px;">Price</th>
+                <th style="border: 1px solid black; padding: 8px;">Description</th>
+                <th style="border: 1px solid black; padding: 8px;">Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Laptop Pro</td>
+                <td style="border: 1px solid black; padding: 8px;"><img src="https://via.placeholder.com/100" alt="A generic laptop" style="width: 100px; height: 100px;"></td>
+                <td style="border: 1px solid black; padding: 8px;">$1200.00</td>
+                <td style="border: 1px solid black; padding: 8px;">A high-performance laptop for professionals.</td>
+                <td style="border: 1px solid black; padding: 8px;">In Stock</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Wireless Mouse</td>
+                <td style="border: 1px solid black; padding: 8px;"><img src="https://via.placeholder.com/100" alt="A wireless mouse" style="width: 100px; height: 100px;"></td>
+                <td style="border: 1px solid black; padding: 8px;">$25.00</td>
+                <td style="border: 1px solid black; padding: 8px;">Ergonomic mouse with long battery life.</td>
+                <td style="border: 1px solid black; padding: 8px;">In Stock</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Headphones</td>
+                <td style="border: 1px solid black; padding: 8px;"><img src="https://via.placeholder.com/100" alt="Over-ear headphones" style="width: 100px; height: 100px;"></td>
+                <td style="border: 1px solid black; padding: 8px;">$90.00</td>
+                <td style="border: 1px solid black; padding: 8px;">Noise-cancelling headphones for immersive audio.</td>
+                <td style="border: 1px solid black; padding: 8px;" rowspan="2">Out of Stock</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;" colspan="4">Special Offer: All audio products are temporarily unavailable.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
